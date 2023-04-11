@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agência Prime DF</title>
+  </head>
+  <body>
+    <h1>Seja bem-vindo à Agência Prime DF!</h1>
+    <p>Aqui está o nosso site de publicidade.</p>
+    <script>
+      document.write("<p>O nome da nossa agência é Agência Prime DF.</p>");
+    </script>
+  </body>
+</html>
+// Seleciona o botão do menu
+const menuBtn = document.querySelector('.menu-btn');
+
+// Seleciona o menu
+const menu = document.querySelector('.menu');
+
+// Adiciona um ouvinte de eventos ao botão do menu
+menuBtn.addEventListener('click', () => {
+  // Adiciona ou remove a classe 'ativo' ao menu para abrir ou fechar
+  menu.classList.toggle('ativo');
+});
