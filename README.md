@@ -10,3 +10,15 @@
 
 𝙀𝙣𝙩𝙖𝙤, 𝙨𝙚 𝙫𝙤𝙘𝙚 𝙦𝙪𝙚𝙧 𝙚𝙡𝙚𝙫𝙖𝙧 𝙨𝙚𝙪 𝙣𝙚𝙜𝙤𝙘𝙞𝙤 𝙖 𝙪𝙢 𝙣𝙤𝙫𝙤 𝙥𝙖𝙩𝙖𝙢𝙖𝙧, 𝙚𝙣𝙩𝙧𝙚 𝙚𝙢 𝙘𝙤𝙣𝙩𝙖𝙩𝙤 𝙘𝙤𝙣𝙤𝙨𝙘𝙤 𝙝𝙤𝙟𝙚 𝙚 𝙙𝙚𝙨𝙘𝙪𝙗𝙧𝙖 𝙘𝙤𝙢𝙤 𝙖 𝘼𝙜𝙚𝙣𝙘𝙞𝙖 𝙋𝙧𝙞𝙢𝙚 𝙥𝙤𝙙𝙚 𝙖𝙟𝙪𝙙𝙖-𝙡𝙤 𝙖 𝙖𝙡𝙘𝙖𝙣𝙘𝙖𝙧 𝙨𝙚𝙪𝙨 𝙤𝙗𝙟𝙚𝙩𝙞𝙫𝙤𝙨. 𝙉𝙤𝙨 𝙚𝙨𝙩𝙖𝙢𝙤𝙨 𝙥𝙧𝙤𝙣𝙩𝙤𝙨 𝙥𝙖𝙧𝙖 𝙨𝙚𝙧𝙢𝙤𝙨 𝙨𝙚𝙪𝙨 𝙥𝙖𝙧𝙘𝙚𝙞𝙧𝙤𝙨 𝙙𝙚 𝙥𝙪𝙗𝙡𝙞𝙘𝙞𝙙𝙖𝙙𝙚 𝙚 𝙢𝙖𝙧𝙠𝙚𝙩𝙞𝙣𝙜 𝙙𝙚 𝙨𝙪𝙘𝙚𝙨𝙨𝙤.
 𝙛𝙖𝙨𝙨𝙖 𝙨𝙚𝙪 𝙨𝙖𝙞𝙩𝙚 𝙥𝙖𝙧𝙖 𝙤𝙗𝙩𝙚𝙧 𝙢𝙖𝙞𝙨 𝙫𝙚𝙣𝙙𝙖𝙨 𝙣𝙖 𝙨𝙪𝙖 𝙡𝙤𝙟𝙖 𝙤𝙪 𝙖𝙢𝙥𝙡𝙞𝙚 𝙨𝙚𝙪 𝙨𝙚𝙧𝙫𝙞𝙘𝙤 𝙥𝙖𝙧𝙖 𝙤𝙗𝙩𝙚𝙧 𝙢𝙖𝙞𝙨 𝙫𝙚𝙣𝙙𝙖𝙨 https://beacons.ai/agencianovaera
+# Create a folder
+$ mkdir actions-runner && cd actions-runner# Download the latest runner package
+$ curl -o actions-runner-linux-x64-2.303.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.303.0/actions-runner-linux-x64-2.303.0.tar.gz# Optional: Validate the hash
+$ echo "e4a9fb7269c1a156eb5d5369232d0cd62e06bec2fd2b321600e85ac914a9cc73  actions-runner-linux-x64-2.303.0.tar.gz" | shasum -a 256 -c# Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.303.0.tar.gz
+configurar
+# Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/Danieldfl/agencia-prime-df- --token A7DWT5T7S6HXFLT324KVX2TEG2JRY# Last step, run it!
+$ ./run.sh
+Usando seu corredor auto-hospedado
+# Use this YAML in your workflow file for each job
+runs-on: self-hosted
